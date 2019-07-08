@@ -7,3 +7,7 @@ test('encrypts string with Caesar Cipher (1)', () => {
 test('encrypts string with Caesar Cipher (2)', () => {
   expect(cc('xYz', 3)).toBe('aBc');
 });
+
+test('encrypts string with Caesar Cipher (3)', () => {
+  expect(cc('Programming is cool!', 3)).toBe('Surjudpplqj lv frro!');
+});
