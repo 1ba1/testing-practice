@@ -7,8 +7,6 @@ const hasPunctuation = (str) => {
   return str.match(regex) !== null;
 };
 
-
-
 const cc = (str, key) => {
   let result = ``;
 
