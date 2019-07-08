@@ -10,13 +10,13 @@ const hasPunctuation = (str) => {
 const cc = (str, key) => {
   let result = ``;
 
-  for (let i = 0; i < str.length; i++ ){
+  for (let i = 0; i < str.length; i++) {
     if (hasPunctuation(str[i])) {
       result += str[i];
     } else if (isUpperCase(str[i])) {
-      result += String.fromCharCode((str.charCodeAt(i) + key - 65) % 26 + 65);
+      result += String.fromCharCode(((str.charCodeAt(i) + key - 65) % 26) + 65);
     } else {
-      result += String.fromCharCode((str.charCodeAt(i) + key - 97) % 26 + 97);
+      result += String.fromCharCode(((str.charCodeAt(i) + key - 97) % 26) + 97);
     }
   }
 

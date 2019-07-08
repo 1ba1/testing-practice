@@ -4,7 +4,7 @@ const analyze = (arr) => {
     min: Math.min(...arr),
     max: Math.max(...arr),
     length: arr.length,
-  }
-}
+  };
+};
 
 module.exports = analyze;
